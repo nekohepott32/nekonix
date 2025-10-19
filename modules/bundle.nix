@@ -1,0 +1,30 @@
+{
+  imports = [
+    ./bootloader.nix
+    ./sound.nix
+    ./env.nix
+    ./user.nix
+    ./xserver.nix
+    ./nm.nix
+    ./virtmanager.nix
+    ./nvidia.nix
+    ./flatpak.nix
+    #./sddm.nix
+    ./steam.nix
+    ./gamemode.nix
+    ./obs-studio.nix
+    ./nix-ld.nix
+	./firefox.nix
+	#./hyprland.nix
+	./plasma.nix
+	#./gnome.nix
+	./nix-helper.nix
+	#./waybar.nix
+	./catppuccin.nix
+	./ly.nix
+	./waydroid.nix
+	./winboat.nix
+	#./stylix.nix
+	./mount.nix
+  ];
+}
