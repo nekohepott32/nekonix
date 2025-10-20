@@ -4,7 +4,7 @@
     ./sound.nix
     ./env.nix
     ./user.nix
-    ./xserver.nix
+    #./xserver.nix
     ./nm.nix
     ./virtmanager.nix
     ./nvidia.nix
