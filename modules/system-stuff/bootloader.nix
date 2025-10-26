@@ -1,7 +1,8 @@
 
-{pkgs, ...}:
+{pkgs, inputs, ...}:
 {
   boot = {
+	kernelPackages = pkgs.linuxPackages_cachyos;
   	kernelModules = [
   	  "ntsync"
   	  "v4l2loopback"
@@ -11,10 +12,8 @@
 	  		enable = true;
 	  		efiSupport = true;
 	  		enrollConfig = true;
-	  		style.wallpapers = [ "/home/neko32/nix/modules/wallpaper.png" ];
+	  		style.wallpapers = [ "./wallpaper.png" ];
 	  		enableEditor = true;
-	  		#device = "nodev";
-			#useOSProber = true;
 		};
 		efi = {
 			canTouchEfiVariables = true;

@@ -1,30 +1,33 @@
 {
   imports = [
-    ./bootloader.nix
-    ./sound.nix
-    ./env.nix
-    ./user.nix
-    ./xserver.nix
-    ./nm.nix
-    ./virtmanager.nix
-    ./nvidia.nix
-    ./flatpak.nix
-    #./sddm.nix
-    ./steam.nix
-    ./gamemode.nix
-    ./obs-studio.nix
-    ./nix-ld.nix
-	./firefox.nix
-	#./hyprland.nix
-	./plasma.nix
-	#./gnome.nix
-	./nix-helper.nix
-	#./waybar.nix
-	./catppuccin.nix
-	./ly.nix
-	./waydroid.nix
-	./winboat.nix
-	#./stylix.nix
-	./mount.nix
+    # system stuff
+    ./system-stuff/bootloader.nix
+    ./system-stuff/sound.nix
+    ./system-stuff/env.nix
+    ./system-stuff/user.nix
+    ./system-stuff/xserver.nix
+    ./system-stuff/nm.nix
+    ./system-stuff/virtualization.nix
+    ./system-stuff/nvidia.nix
+    ./system-stuff/mount.nix
+
+    # programs
+    ./programs/flatpak.nix
+    ./programs/steam.nix
+    ./programs/gamemode.nix
+    ./programs/obs-studio.nix
+    ./programs/nix-ld.nix
+	./programs/firefox.nix
+	./programs/nix-helper.nix
+	./programs/catppuccin.nix
+	./programs/waydroid.nix
+	./programs/winboat.nix
+	./programs/sudo-rs.nix
+	./programs/ios.nix
+
+	# de stuff
+	./de-wm/plasma.nix
+	./de-wm/ly.nix
+
   ];
 }

@@ -3,7 +3,7 @@
 {
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
+    permittedInsecurePackages = ["python-2.7.18.12" "electron-25.9.0"];
     cudaSupport = true;
 };
 
@@ -93,7 +93,7 @@
     winetricks
     #kdePackages.kolourpaint
     #kdePackages.sddm-kcm # Configuration module for SDDM
-    kdePackages.wallpaper-engine-plugin
+    #kdePackages.wallpaper-engine-plugin
     kdiff3 
     kdePackages.qtbase
     kdePackages.qtwayland
@@ -147,6 +147,8 @@
     tela-icon-theme
     nix-ld
     plasmusic-toolbar
+    kurve
+    #kdePackages.wallpaper-engine-plugin
     #kdePackages.kvantum
     #qt5ct
     #some libs
