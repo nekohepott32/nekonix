@@ -5,6 +5,7 @@
       ./hardware-configuration.nix
       ./packages.nix
       ./modules/bundle.nix
+      ./cachix.nix
     ];
 
   networking.hostName = "nekonix"; 
@@ -17,7 +18,10 @@
     useXkbConfig = true;
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+  	experimental-features = [ "nix-command" "flakes" ];
+    trusted-users = [ "root" "neko32" ];
+  };
 	
   system.stateVersion = "25.05";
 

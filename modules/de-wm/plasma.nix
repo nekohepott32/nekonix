@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
 	services = {
 	  desktopManager.plasma6.enable = true;
@@ -15,6 +15,7 @@
 	
 	environment.systemPackages = with pkgs;
 	  [
+	  	inputs.kwin-effects-forceblur.packages.${pkgs.system}.default
 	    #kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
 	    kdePackages.kcalc # Calculator
 	    #kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts

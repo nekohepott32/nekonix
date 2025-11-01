@@ -12,7 +12,7 @@
 	  		enable = true;
 	  		efiSupport = true;
 	  		enrollConfig = true;
-	  		style.wallpapers = [ "./wallpaper.png" ];
+	  		style.wallpapers = [ "/home/neko32/nix/modules/wallpaper.png" ];
 	  		enableEditor = true;
 		};
 		efi = {

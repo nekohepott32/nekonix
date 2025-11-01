@@ -14,10 +14,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    winboat = {
-      url = "github:TibixDev/winboat";
+    kwin-effects-forceblur = {
+      url = "github:taj-ny/kwin-effects-forceblur";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    #winboat = {
+      #url = "github:TibixDev/winboat";
+      #inputs.nixpkgs.follows = "nixpkgs";
+    #};
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -29,9 +34,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixowos = {
-      url = "github:yunfachi/nixowos";
-   };
+    #nixowos = {
+      #url = "github:yunfachi/nixowos";
+   #};
 
 
     zen-browser = {
@@ -41,7 +46,7 @@
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix, chaotic, nixowos, aagl, catppuccin, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix, chaotic, aagl, catppuccin, ... }@inputs:
     let
       system = "x86_64-linux";
     in {
@@ -56,7 +61,7 @@
         modules = [
           ./configuration.nix
 
-          nixowos.nixosModules.default
+          #nixowos.nixosModules.default
 
           stylix.nixosModules.stylix
 
@@ -78,6 +83,7 @@
             };
           }
           {
+          nix.settings = aagl.nixConfig;
           programs.anime-game-launcher.enable = true;
           programs.honkers-railway-launcher.enable = true;
           programs.sleepy-launcher.enable = true;

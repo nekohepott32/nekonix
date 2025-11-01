@@ -1,7 +1,7 @@
 {pkgs, ...}:
 {
 	programs.firefox = {
-	enable = true;
+	enable = false;
 	package = pkgs.firefox-bin;
 	};
 }

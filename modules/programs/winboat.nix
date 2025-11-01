@@ -3,6 +3,6 @@
 {
   environment.systemPackages = [
     inputs.winboat.packages.${system}.winboat
-    pkgs.freerdp
+    #pkgs.freerdp
   ];
 }

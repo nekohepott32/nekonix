@@ -5,7 +5,7 @@
     ./modules/bundle.nix
     inputs.spicetify-nix.homeManagerModules.default
     inputs.stylix.homeModules.stylix
-    inputs.nixowos.homeModules.default
+    #inputs.nixowos.homeModules.default
     inputs.zen-browser.homeModules.beta
     inputs.catppuccin.homeModules.catppuccin
   ];
@@ -46,10 +46,10 @@
       #autoEnable = true;
       #image = ../nokowall.png;
       polarity = "dark";
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
       targets = {
       	#kvantum.enable = true;
-      	qt.enable = false;
+        qt.enable = false;
       	vesktop.enable = true;
       	zen-browser.profileNames = [ "neko32" ];
       };

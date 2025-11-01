@@ -10,8 +10,8 @@
   environment.systemPackages = with pkgs; [
     #some gui applications
     audacious
-    chromium
-	firefox
+    #chromium
+	#firefox
 	spotify
 	telegram-desktop
 	r2modman
@@ -20,15 +20,15 @@
 	zoom-us
     kitty
     flameshot
-    onlyoffice-bin
+    onlyoffice-desktopeditors
     protonvpn-gui
     vesktop
     qbittorrent
-    google-chrome
+    #google-chrome
     protonup-qt
     kdePackages.dolphin
     element-desktop
-    fluffychat
+    #fluffychat
     #xfce.thunar
     #xfce.thunar-volman
     #gvfs
@@ -38,8 +38,9 @@
 	droidcam
 	audacity
 	#jetbrains.pycharm-community-bin
-	shotcut
+	#shotcut
 	vscodium
+	gimp
 
     
     #overrided packages
@@ -48,11 +49,11 @@
     #  withVencord = true;
     #})
     
-    (heroic.override {
-      extraPkgs = pkgs: [
-        pkgs.gamemode
-      ];
-    })
+    #(heroic.override {
+    #  extraPkgs = pkgs: [
+    #    pkgs.gamemode
+    #  ];
+    #})
 
     #wm
     #seatd
@@ -99,22 +100,26 @@
     kdePackages.qtwayland
     kdePackages.qtmultimedia
     kdePackages.partitionmanager
+    wireguard-tools
     haruna
     wayland-utils
     wl-clipboard
     wine64
-    docker-compose
-    freerdp
+    #docker-compose
+    #freerdp
     nodejs_24
     gnumake
     gcc
     rustc
     cargo
     nodejs
-    python
+    python2
     fastfetch
     file
     rar
+    gzip
+    bzip2
+    xz
     unrar
     tree
     wget
@@ -142,6 +147,7 @@
     spice-vdagent
     papirus-nord
     steam-run
+    oreo-cursors-plus
     appimage-run
     #papirus-icon-theme
     tela-icon-theme
@@ -162,7 +168,7 @@
         colorama
         python-telegram-bot
         streamlit
-        PyGithub
+        pygithub
         rich
         pyside6
         toml
@@ -180,7 +186,7 @@
 	ubuntu-sans
     jetbrains-mono
     noto-fonts
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     noto-fonts-cjk-sans
     nerd-fonts.mononoki
   ];
