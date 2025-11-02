@@ -46,7 +46,7 @@
       #autoEnable = true;
       #image = ../nokowall.png;
       polarity = "dark";
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
       targets = {
       	#kvantum.enable = true;
         qt.enable = false;

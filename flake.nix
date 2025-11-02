@@ -19,6 +19,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    #niri = {
+    #	url = "github:sodiboo/niri-flake";
+    #	inputs.nixpkgs.follows = "nixpkgs";
+    #};
+
     #winboat = {
       #url = "github:TibixDev/winboat";
       #inputs.nixpkgs.follows = "nixpkgs";
@@ -70,6 +75,8 @@
           aagl.nixosModules.default
 
           catppuccin.nixosModules.catppuccin
+
+          #niri.nixosModules.niri
           
           home-manager.nixosModules.home-manager
 
