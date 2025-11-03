@@ -30,9 +30,12 @@
     enabledExtensions = with spicePkgs.extensions; [
       adblock
       hidePodcasts
+      #shuffle
+      oneko
     ];
     enabledCustomApps = with spicePkgs.apps; [
       newReleases
+      historyInSidebar
     ];
     enabledSnippets = with spicePkgs.snippets; [
     ];
@@ -46,7 +49,7 @@
       #autoEnable = true;
       #image = ../nokowall.png;
       polarity = "dark";
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
       targets = {
       	#kvantum.enable = true;
         qt.enable = false;
@@ -57,5 +60,6 @@
 
   programs.zen-browser.enable = true;
 
+  xdg.configFile."electron-flags.conf".source = ./electron-flags.conf;
   
 }

@@ -14,10 +14,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    kwin-effects-forceblur = {
-      url = "github:taj-ny/kwin-effects-forceblur";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #kwin-effects-forceblur = {
+      #url = "github:taj-ny/kwin-effects-forceblur";
+      #inputs.nixpkgs.follows = "nixpkgs";
+    #};
 
     #niri = {
     #	url = "github:sodiboo/niri-flake";

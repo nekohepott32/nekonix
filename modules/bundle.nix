@@ -19,9 +19,8 @@
     ./programs/nix-ld.nix
 	./programs/firefox.nix
 	./programs/nix-helper.nix
-	#./programs/catppuccin.nix
+	./programs/catppuccin.nix
 	./programs/waydroid.nix
-	#./programs/winboat.nix
 	./programs/sudo-rs.nix
 	./programs/ios.nix
 

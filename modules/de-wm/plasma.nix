@@ -15,7 +15,7 @@
 	
 	environment.systemPackages = with pkgs;
 	  [
-	  	inputs.kwin-effects-forceblur.packages.${pkgs.system}.default
+	  	#inputs.kwin-effects-forceblur.packages.${pkgs.system}.default
 	    #kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
 	    kdePackages.kcalc # Calculator
 	    #kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
@@ -23,6 +23,7 @@
 	    #kdePackages.kolourpaint # Easy-to-use paint program
 	    #kdePackages.ksystemlog # KDE SystemLog Application
 	    #kdePackages.sddm-kcm # Configuration module for SDDM
+	    kdePackages.kfind
 	    kdiff3 # Compares and merges 2 or 3 files or directories
 	    pkgs.kdePackages.qtbase
 	    pkgs.kdePackages.qtwayland
