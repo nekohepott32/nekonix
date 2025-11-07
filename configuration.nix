@@ -19,6 +19,7 @@
   };
 
   nix.settings = {
+  	#max-jobs = 4;
   	experimental-features = [ "nix-command" "flakes" ];
     trusted-users = [ "root" "neko32" ];
   };
