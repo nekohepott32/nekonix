@@ -46,6 +46,7 @@
 
   stylix = {
       enable = true;
+      enableReleaseChecks = false;
       #autoEnable = true;
       #image = ../nokowall.png;
       polarity = "dark";

@@ -12,7 +12,7 @@
     audacious
     #chromium
 	#firefox
-	spotify
+	youtube-music
 	telegram-desktop
 	r2modman
 	osu-lazer
@@ -90,7 +90,7 @@
     v4l-utils
     #spice_gtk
     #fftw-single
-    zulu24
+    zulu25
     winetricks
     #kdePackages.kolourpaint
     #kdePackages.sddm-kcm # Configuration module for SDDM
