@@ -2,13 +2,16 @@
   disko.devices = {
     disk = {
       main = {
-        device = "/dev/nvme0n1";
         type = "disk";
+        device = "/dev/disk/nvme0n1";
         content = {
           type = "gpt";
           partitions = {
             ESP = {
-              end = "500M";
+              priority = 1;
+              name = "ESP";
+              start = "1M";
+              end = "128M";
               type = "EF00";
               content = {
                 type = "filesystem";
@@ -18,18 +21,14 @@
               };
             };
             root = {
-              name = "root";
-              end = "-0";
+              size = "100%";
               content = {
-                type = "filesystem";
-                format = "f2fs";
+                type = "btrfs";
+                extraArgs = [ "-f" ]; # Override existing partition
                 mountpoint = "/";
-                extraArgs = [
-                  "-O"
-                  "extra_attr,inode_checksum,sb_checksum,compression"
-                ];
                 mountOptions = [
-                  "compress_algorithm=zstd:6,compress_chksum,atgc,gc_merge,lazytime,nodiscard"
+                  "compress=zstd"
+                  "noatime"
                 ];
               };
             };
