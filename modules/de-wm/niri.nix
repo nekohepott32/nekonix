@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{pkgs, inputs, ...}:
 {
 	programs.niri.enable = true;
 	nixpkgs.overlays = [ inputs.niri.overlays.niri ];

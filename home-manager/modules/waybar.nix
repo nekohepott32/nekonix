@@ -65,16 +65,16 @@
       	format = "{icon}"; # важно!
       	format-icons = [ "▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
       	
-      	framerate = 180;
+      	framerate = 120;
       	autosens = 1;
-        #sensitivity = 100;
+        sensitivity = 3;
       	        bars = 20;
       	        #lower_cutoff_freq = 50;
       	        #higher_cutoff_freq = 10000;
       	        hide_on_silence = false;
       	        method = "pulse";
       	        source = "auto";
-      	        stereo = true;
+      	        stereo = false;
       	        #reverse = false;
       	        bar_delimiter = 0;
       	        #monstercat = false;

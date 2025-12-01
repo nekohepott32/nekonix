@@ -25,8 +25,9 @@
 	./programs/ios.nix
 
 	# de stuff
-	#./de-wm/plasma.nix
-	./de-wm/niri.nix
+	./de-wm/plasma.nix
+	#./de-wm/niri.nix
+	#./de-wm/hyprland.nix
 	./de-wm/ly.nix
 
   ];

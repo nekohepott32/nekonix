@@ -10,10 +10,13 @@
   environment.systemPackages = with pkgs; [
     #some gui applications
     audacious
+    ardour
     #chromium
 	#firefox
 	youtube-music
 	telegram-desktop
+	kdePackages.gwenview
+	kdePackages.okular
 	r2modman
 	osu-lazer
 	mpv
@@ -26,6 +29,7 @@
     qbittorrent
     #google-chrome
     protonup-qt
+    kdePackages.kdenlive
     kdePackages.dolphin
     element-desktop
     #fluffychat
@@ -55,7 +59,7 @@
     #  ];
     #})
 
-    #wm
+    ##wm
     #seatd
     #pavucontrol
     #dconf
@@ -72,7 +76,7 @@
     #grim
     #slurp
     #networkmanagerapplet 
-    #qt6ct   
+    #qt6Packages.qt6ct   
     #mako
     #hyprlock
     #hyprpolkitagent
@@ -149,8 +153,8 @@
     steam-run
     oreo-cursors-plus
     appimage-run
-    #papirus-icon-theme
-    tela-icon-theme
+    papirus-icon-theme
+    #tela-icon-theme
     nix-ld
     plasmusic-toolbar
     kurve
@@ -189,5 +193,6 @@
     noto-fonts-color-emoji
     noto-fonts-cjk-sans
     nerd-fonts.mononoki
+    nerd-fonts.ubuntu
   ];
 }

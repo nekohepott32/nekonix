@@ -19,10 +19,10 @@
       #inputs.nixpkgs.follows = "nixpkgs";
     #};
 
-    niri = {
-    	url = "github:sodiboo/niri-flake";
-    	inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #niri = {
+    	#url = "github:sodiboo/niri-flake";
+    	#inputs.nixpkgs.follows = "nixpkgs";
+    #};
 
     #winboat = {
       #url = "github:TibixDev/winboat";
@@ -51,7 +51,7 @@
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix, chaotic, aagl, catppuccin, niri, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, stylix, chaotic, aagl, catppuccin, ... }@inputs:
     let
       system = "x86_64-linux";
     in {
@@ -76,7 +76,7 @@
 
           catppuccin.nixosModules.catppuccin
 
-          niri.nixosModules.niri
+          #niri.nixosModules.niri
           
           home-manager.nixosModules.home-manager
 
